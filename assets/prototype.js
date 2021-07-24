@@ -124,7 +124,7 @@
 
 
 function Hero (name) {
-  // const hero = Object.create(Hero.prototype);
+  const hero = Object.create(Hero.prototype);
   this.name = name;
 };
 

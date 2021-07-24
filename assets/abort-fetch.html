@@ -10,16 +10,16 @@
         id="huge-image" 
         height="400"
     />
+    <br>
     <button id="load">Load HUGE Image</button>
     <button id="stop" disabled>Stop Fetching</button>
     
     <script>
-        const url = 
-        'https://images.pexels.com/photos/974470/nature-stars-milky-way-galaxy-974470.jpeg?q=100';
+      const url = 'https://images.pexels.com/photos/974470/nature-stars-milky-way-galaxy-974470.jpeg?q=100';
       const img = document.getElementById('huge-image');
       const loadButton = document.getElementById('load');
       const stopButton = document.getElementById('stop');
-
+      let controller;
 
       function startLoading() {
         loadButton.disabled = true;
@@ -34,10 +34,23 @@
 
       loadButton.onclick = async function() {
         startLoading();
+
+        controller = new AbortController();
+
+        try {
+          const response = await fetch(url, { signal: controller.signal });
+          const blob = await response.blob(); //blob es el binario que estamos pidiendo. 
+          const imgUrl = URL.createObjectURL(blob); //Con esto pasamos el binario a una URL.
+          img.src = imgUrl; //Aca le asignamos la URL a la etiqueta img traida del DOM.
+        } catch (error) { //Cuando la promesa se rechaza se obtiene el AbortError.
+          console.log(error.message);
+        }
+
         stopLoading();
       };
 
       stopButton.onclick = function() {
+        controller.abort(); //Hacemos uso del metodo .abort() para abortar el request.
         stopLoading();
       };
     </script>
