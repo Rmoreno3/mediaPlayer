@@ -1,4 +1,9 @@
+import MediaPlayer from "../MediaPlayer";
+
 class AutoPause {
+  private threshold: number;
+  player: MediaPlayer;
+
   constructor() {
     this.threshold = 0.20; //El porcentaje minimo para indicar que el elemento salio de vista (viewport).
     this.handleIntersection = this.handleIntersection.bind(this)
@@ -18,7 +23,7 @@ class AutoPause {
     document.addEventListener("visibilitychange", this.handleVisibilityChange)
   }
 
-  handleIntersection(entries) {
+  private handleIntersection(entries: IntersectionObserverEntry[]) {
     const entry = entries[0];
     const isVisible = entry.isIntersecting; //Obtenemos un booleano si ya el elemento esta fuera de vista o no.
 
@@ -29,7 +34,7 @@ class AutoPause {
   /*Este metodo toma el valor de visibilityState para reproducir el video si el usuario esta visizalizando
   la pagina y pausarlo si el usuario cambia de pestaña o minimiza
   */
-  handleVisibilityChange() {
+  private handleVisibilityChange() {
     const visible = document.visibilityState === "visible";
     (visible) ? this.player.play() : this.player.pause();
   }
