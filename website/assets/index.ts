@@ -1,11 +1,12 @@
-import MediaPlayer from './MediaPlayer';
-import AutoPlay from './plugins/AutoPlay';
-import AutoPause from './plugins/AutoPause';
+import MediaPlayer from 'rmoreno31_mediaplayer';
+import AutoPlay from 'rmoreno31_mediaplayer/lib/plugins/AutoPlay';
+import AutoPause from 'rmoreno31_mediaplayer/lib/plugins/AutoPause';
+import Ads from 'rmoreno31_mediaplayer/lib/plugins/Ads';
 
 const video = document.querySelector("video");
 const player = new MediaPlayer({ 
   el: video, 
-  plugins: [new AutoPlay(), new AutoPause()],
+  plugins: [new AutoPlay(), new AutoPause(), new Ads()],
   });
 
 const button: HTMLElement = document.querySelector("button");

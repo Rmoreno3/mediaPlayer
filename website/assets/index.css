@@ -36,3 +36,32 @@ main {
 .movie {
   width: 100%;
 }
+
+.ads {
+  padding: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  inline-size: 80%;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ads__link {
+  text-decoration: none;
+  color: #030303;
+  display: flex;
+  align-items: center;
+}
+
+.ads__link > img {
+  block-size: 100px;
+  inline-size: 100px;
+}
+
+.ads__info {
+  margin-inline-start: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

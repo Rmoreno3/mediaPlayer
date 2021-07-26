@@ -1,4 +1,4 @@
-import MediaPlayer from '../MediaPlayer';
+import MediaPlayer from '../../src/MediaPlayer';
 
 class AutoPlay {
   constructor() { }
