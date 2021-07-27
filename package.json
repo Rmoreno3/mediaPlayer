@@ -1,0 +1,25 @@
+{
+  "name": "javascript.profesional",
+  "version": "1.0.0",
+  "description": "Proyecto del Curso Profesional de JavaScript de la Escuela de JavaScript de Platzi.",
+  "license": "MIT",
+  "author": "Reynaldo Moreno <reynaldomoreno173@gmail.com>",
+  "keywords": [
+    "JavaScript",
+    "Typescript",
+    "Npm"
+  ],
+  "scripts": {
+    "start": "parcel index.html website/assets/**/*.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "typescript": "^3.5.3"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ],
+  "dependencies": {
+    "rmoreno31_mediaplayer": "^1.0.0"
+  }
+}

@@ -1,14 +1,16 @@
 {
-  "name": "platzi-media-player",
+  "name": "javascript.profesional",
   "version": "1.0.0",
   "description": "Proyecto del Curso Profesional de JavaScript de la Escuela de JavaScript de Platzi.",
   "license": "MIT",
-  "author": "Richard B. Kaufman López <richardbkaufman@gmail.com>",
+  "author": "Reynaldo Moreno <reynaldomoreno173@gmail.com>",
   "keywords": [
-    "platzi"
+    "JavaScript",
+    "Typescript",
+    "Npm"
   ],
   "scripts": {
-    "start": "parcel index.html assets/*.html assets/**/*.html"
+    "start": "parcel index.html assets/**/*.html"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.3",
