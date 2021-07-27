@@ -3,10 +3,6 @@ class MediaPlayer {
   plugins: Array<any>;
   container: HTMLElement;
 
-<<<<<<< HEAD
-=======
-
->>>>>>> development
   constructor(config) {
     this.media = config.el;
     this.plugins = config.plugins || [];
@@ -17,11 +13,7 @@ class MediaPlayer {
   initPlayer() {
     this.container = document.createElement('div');
     this.container.style.position = 'relative';
-<<<<<<< HEAD
-    this.media.parentNode.insertBefore(this.container, this.media);
-=======
     this.media.parentNode.insertBefore(this.container, this.media)
->>>>>>> development
     this.container.appendChild(this.media);
   }
 
