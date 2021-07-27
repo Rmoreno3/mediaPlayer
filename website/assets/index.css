@@ -48,7 +48,6 @@ main {
 }
 
 .ads__link {
-<<<<<<< HEAD
   display: flex;
   color: inherit;
   text-decoration: inherit;
@@ -72,8 +71,6 @@ main {
 }
 .ads__body {
   margin: 0;
-}
-=======
   text-decoration: none;
   color: #030303;
   display: flex;
@@ -90,11 +87,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-<<<<<<< HEAD:dist/assets.7655728f.css
 }
 
-/*# sourceMappingURL=/assets.7655728f.css.map */
-=======
-}
->>>>>>> development:website/assets/index.css
->>>>>>> development
+

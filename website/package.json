@@ -10,7 +10,7 @@
     "Npm"
   ],
   "scripts": {
-    "start": "parcel index.html assets/**/*.html"
+    "start": "parcel index.html assets/*.ts assets/**/*.ts"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.3",
