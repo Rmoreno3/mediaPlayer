@@ -8,16 +8,28 @@
     "platzi"
   ],
   "scripts": {
+<<<<<<< HEAD:website/package.json
     "start": "parcel index.html ejercicios/index.html ejercicios/**/*.html"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.3",
     "typescript": "^3.5.3"
+=======
+    "start": "parcel index.html assets/**/*.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "typescript": "^4.3.5"
+>>>>>>> development:package.json
   },
   "browserslist": [
     "last 1 Chrome version"
   ],
   "dependencies": {
+<<<<<<< HEAD:website/package.json
     "@sparragus/platzimediaplayer": "^1.0.0"
+=======
+    "rmoreno31_mediaplayer": "^1.0.0"
+>>>>>>> development:package.json
   }
 }

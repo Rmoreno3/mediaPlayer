@@ -1,16 +1,35 @@
 {
+<<<<<<< HEAD
   "name": "@sparragus/platzimediaplayer",
   "version": "1.0.0",
   "description": "",
   "main": "lib/MediaPlayer.js",
+=======
+  "name": "rmoreno31_mediaplayer",
+  "version": "1.0.0",
+  "description": "Desarrollo de un mediaplayer con plugins, para ser usado en cualquier proyecto.",
+  "main": "lib/MediaPlayer.js",
+  "directories": {
+    "lib": "lib"
+  },
+>>>>>>> development
   "scripts": {
     "build": "tsc src/**/*.ts src/plugins/*.ts src/plugins/**/*.ts --outDir lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+<<<<<<< HEAD
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "typescript": "^3.5.3"
   }
+=======
+  "keywords": [
+    "JavaScript",
+    "Npm"
+  ],
+  "author": "Reynaldo Moreno <reynaldomoreno173@gmail.com>",
+  "license": "MIT"
+>>>>>>> development
 }

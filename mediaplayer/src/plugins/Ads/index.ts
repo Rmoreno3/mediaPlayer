@@ -24,7 +24,11 @@ class AdsPlugin {
   private handleTimeUpdate() {
     const currentTime = Math.floor(this.media.currentTime);
     if (currentTime % 30 === 0) {
+<<<<<<< HEAD
       this.renderAd();
+=======
+      this.renderAd()
+>>>>>>> development
     }
   }
 
@@ -32,15 +36,25 @@ class AdsPlugin {
     if (this.currentAd) {
       return;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> development
     const ad = this.ads.getAd();
     this.currentAd = ad;
     this.adsContainer.innerHTML = `
       <div class="ads">
+<<<<<<< HEAD
         <a class="ads__link" href="${this.currentAd.url}" target="_blank">
           <img class="ads__img" src="${this.currentAd.imageUrl}" />
           <div class="ads__info">
             <h5 class="ads__title">${this.currentAd.title}</h5>
+=======
+        <a  class="ads__link" href="${this.currentAd.url}" target="_blank">
+          <img class="ads__img" src="${this.currentAd.imageUrl}" />
+          <div class="ads__info">
+            <h3 class="ads__title">${this.currentAd.title}</h3>
+>>>>>>> development
             <p class="ads__body">${this.currentAd.body}</p>
           </div>
         </a>
@@ -54,4 +68,8 @@ class AdsPlugin {
   }
 }
 
+<<<<<<< HEAD
 export default AdsPlugin;
+=======
+export default AdsPlugin;
+>>>>>>> development

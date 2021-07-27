@@ -1,8 +1,15 @@
 export interface Ad {
+<<<<<<< HEAD
   imageUrl: string;
   title: string;
   body: string;
   url: string;
+=======
+  imageUrl: string,
+  title: string,
+  body: string,
+  url: string,
+>>>>>>> development
 }
 
 const ALL_ADS: Ad[] = [
@@ -97,7 +104,11 @@ class Ads {
   }
 
   private initAds() {
+<<<<<<< HEAD
     this.ads = [...ALL_ADS];
+=======
+    this.ads = [...ALL_ADS]
+>>>>>>> development
   }
 
   getAd() {
@@ -109,4 +120,8 @@ class Ads {
   }
 }
 
+<<<<<<< HEAD
 export default Ads;
+=======
+export default Ads;
+>>>>>>> development
